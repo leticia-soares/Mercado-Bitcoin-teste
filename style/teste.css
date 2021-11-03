@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: ExtraLight;
+    src: url('IBMPlexSans-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: boldI;
+    src: url('IBMPlexSans-Bold.ttf');
+}
+
+header {
+    height: 200px;
+    padding: 20px 0;
+}
+.caixa {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+#ui {
+    float: left;
+    width: 143px;
+    height: 55px;
+    margin: 15px 0 0 25px;
+}
+
+nav li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 30px 0 0 40px;
+    text-align: center;
+}
+
+nav a {
+    font-family: ExtraLight;
+	color: black;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+nav a:hover{
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #f48120;
+    font-size: 17px;
+}
+
+#lado {
+    padding-left: 50px;
+}
+
+.log {
+    display: flex;
+    float: right;
+    letter-spacing: 0.5%;
+    padding: 11px 19px;
+    margin: 0 5px;
+    box-sizing: border-box;
+	border-color: #f48120;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+}
+
+.login-sucess {
+    display: inline-block;
+    background-color: #f48120;
+    margin: -30px 25px 0 0;
+    outline: none;
+    color: #FFFFFF;
+    font-family: ExtraLight;
+    font-size: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+section.sobre {
+    position: relative;
+}
+.extras{
+    display: inline-block;
+    position: absolute;
+    margin: 35px 0 0 600px;
+}
+
+img.resize {
+    display: inline-block;
+    height: 650px;
+    width: 650px;
+}
+.extra{
+    display: inline-block;
+    position: absolute;
+    margin: 25px 0 0 500px;
+}
+img.re {
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+}
+.texto-sobre {
+    margin: 100px 0 0 35px;
+}
+
+.texto-sobre h1 {
+    font-family: Poppins-Regular, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    letter-spacing: -.5px;
+    color: #1d2327;
+    position: relative;
+}
+
+.texto-sobre p {
+    margin: 20px 0;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 800px;
+}
+
+p {
+    font-family: boldI, sans-serif;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.texto-sobre a {
+    text-decoration: none;
+    color: #f48120;
+}
+
+#js::after {
+    content: '|';
+    width: 0.12em;
+    margin-left: 7px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
+
+.boxes {
+    position: absolute;
+    z-index:100;
+    display: inline-block;
+    width: 550px;
+    height: 250px;
+	padding: 20px 20px;
+	box-sizing: border-box;
+	border-color: #FFFFFF;
+    box-shadow: 10px 5px 25px black;
+    background-color: #FFFFFF;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 25px;
+    margin: -450px 0 0 650px;
+    
+}
+
+.boxes img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+
+.boxes h2 {
+    display: inline-block;
+    font-family: Poppins-Regular, sans-serif;
+    position: relative;
+}
+
+#one {
+    display: inline-block;
+    position: absolute;
+    font-size: 20px;
+    margin: -2px 0 0 28px;
+}
+
+#two {
+    display: inline-block;
+    font-family: ExtraLight;
+    position: absolute;
+    font-size: 9px;
+    margin: -40px 0 0 90px;
+}
+
+#three {
+    display: inline-block;
+    position: absolute;
+    font-size: 45px;
+    margin: -65px 0 0 87px;
+}
+
+hr {
+    margin: -9px 0 0 87px;
+}
+
+.hr1 {
+    border: 0;
+    border-top: 1px solid #CCC;
+}
+
+.four {
+    font-family: ExtraLight;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 0 0 87px;
+}
+
+.half-box {
+    position: absolute;
+    z-index:100;
+    display: inline-block;
+    width: 250px;
+    height: 290px;
+	padding: 20px 20px;
+	box-sizing: border-box;
+	border-color: #FFFFFF;
+    box-shadow: 10px 5px 25px black;
+    background-color: #FFFFFF;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 25px;
+    margin: 250px 0 0 -430px;
+    
+}
+
+
+.half-box img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+
+.half-box h3 {
+    display: inline-block;
+    position: relative;
+}
+
+#uva {
+    display: inline-block;
+    font-family: Poppins-Regular, sans-serif;
+    position: absolute;
+    font-size: 20px;
+    margin: 95px 0 0 -58px;
+}
+
+#maça {
+    display: inline-block;
+    font-family: ExtraLight;
+    position: absolute;
+    font-size: 9px;
+    margin: 65px 0 0 3px;
+}
+
+#banana {
+    display: inline-block;
+    font-family: Poppins-Regular, sans-serif;
+    position: absolute;
+    font-size: 45px;
+    margin: 65px 0 0 3px;
+}
+
+#fruta {
+    display: inline-block;
+    font-family: ExtraLight;
+    font-size: 15px;
+    margin: 105px 0 0 5px;
+}
+
+.second-half-box {
+    position: absolute;
+    z-index:100;
+    display: inline-block;
+    width: 250px;
+    height: 290px;
+	padding: 20px 20px;
+	box-sizing: border-box;
+	border-color: #FFFFFF;
+    box-shadow: 10px 5px 25px black;
+    background-color: #FFFFFF;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 25px;
+    margin: 250px 0 0 -135px;
+    
+}
+.second-half-box img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+
+#abacaxi {
+    display: inline-block;
+    font-family: Poppins-Regular, sans-serif;
+    position: absolute;
+    font-size: 20px;
+    margin: 95px 0 0 -50px;
+}
+
+#pera {
+    display: inline-block;
+    font-family: ExtraLight;
+    position: absolute;
+    font-size: 9px;
+    margin: 75px 0 0 3px;
+}
+
+#goiaba {
+    display: inline-block;
+    font-family: Poppins-Regular, sans-serif;
+    position: absolute;
+    font-size: 45px;
+    margin: 80px 0 0 3px;
+}
+
+#acerola {
+    display: inline-block;
+    font-family: ExtraLight;
+    font-size: 15px;
+    margin: 125px 0 0 5px;
+}
