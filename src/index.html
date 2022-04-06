@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vem para a nova economia digital | Mercado bitcoin</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Elsie Swash Caps" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montaga" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monotype Corsiva" rel="stylesheet">
+    <link rel= "sortcut icon" href = "assets/images/bitcoin_logo_2.png" >
+</head>
+<body>
+    <header>
+        <div class="caixa1">
+            <h1><img id="ui" src= "assets/images/mercado_btc_logo.png"></h1>
+            <nav class="caixa">
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Negociações</a></li>
+                    <li><a href="#">Conteúdo</a></li>
+                    <li><a href="#">App</a></li>
+                    <li><a href="#">MezaPro</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">&#x1F1E7;&#x1F1F7;</a></li>
+                    <li id="lado"><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="cont">
+            <button class="log login-sucess">Quero Começar</button>
+        </div>
+
+        <section class="sobre">
+            <div class="extras">
+                <h2><img class="resize" src="assets/images/hexagonal_bg.png"></h2>
+            </div>
+        </section>
+        <section class="sobre">
+            <div class="extra">
+                <h3><img class="re" src="assets/images/hexagonal_bg_2.png"></h3>
+            </div>
+        </section>
+        <div class="center">
+            <div class="texto-sobre">
+                <h1>
+                    A maior<br/>
+                    plataforma<br/>
+                    <span id="js" style="color: #f48120">de Criptomoedas</span><br/>
+                    da América Latina<br/>
+                </h1>
+                <p>Acesso, segurança e diversificação<br/>
+                    para você e mais de 3 milhões de<br/>
+                    clientes
+                </p>
+                <p>
+                    Vem pra nova economia digital.<br/>
+                    <a href="#">Bora começar?</a>
+                </p>
+            </div>
+        </div>
+        <div class="boxes">
+            <h2 class="full-box">
+                <img src="assets/images/bitcoin_logo.png">
+                <span id="one">Bitcoin</span><br/>
+                <span id="two">BTC</span><br/>
+                <span id="three">R$ 357.283 </span><br/> 
+                <hr class="hr1">
+                <span class="four">109,53 BTC negociados nas últimas 24hs      </span><br/>
+                <span class="four">R$ 100 compram 0,00027 BTC</span><br/>
+            </h2>
+        <div class="half-box"> 
+            <h3>
+                <img src="assets/images/ethereum_logo.png">
+                <span id="uva">Ethereum</span><br/>
+                <span id="maça">ETH</span><br/>
+                <span id="banana">R$25.828</span><br/>
+                <span id="fruta">733,10 ETH negociados nas últimas 24hs</span><br/>
+            </h3>
+        </div>
+        <div class="second-half-box">
+            <h4 >
+                <img src="assets/images/santos_escudo.png">
+                <span id="abacaxi">Token da Vila</span><br/>
+                <span id="pera">MBSANTOS01</span><br/>
+                <span id="goiaba">R$50</span><br/>
+                <span id="acerola">412,43 MBSANTOS01 negociados nas últimas 24hs</span><br/>
+            </h4>
+        </div>
+
+        </div>
+    </header>
+</body>
+<script>
+    function typeWrite(elemento) {
+        const textoArray = elemento.innerHTML.split('');
+        elemento.innerHTML = '';
+        textoArray.forEach((letra,i) => {
+            setTimeout(function(){
+                elemento.innerHTML += letra;
+            }, 75 * i)
+        });
+    }
+    const titulo = document.getElementById('js')
+    typeWrite(titulo);
+</script>
+</html>
